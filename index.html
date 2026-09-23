@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elane Quezia Dias | Nutrição sem regras impossíveis</title>
+<meta name="description" content="Nutricionista Elane Quezia Dias — CRN9-38934. Reeducação alimentar, emagrecimento saudável e nutrição clínica, presencial e online.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          sand: '#F7F4EF',
+          sandDeep: '#EDE7DB',
+          sage: '#6E7A55',
+          sageDark: '#57603F',
+          olive: '#3E4A2E',
+          ink: '#3A362E',
+          muted: '#8C8575',
+          line: '#DBD4C6',
+        },
+        fontFamily: {
+          serif: ['"Cormorant Garamond"', 'serif'],
+          sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+        },
+      }
+    }
+  }
+</script>
+
+<style>
+  html { scroll-behavior: smooth; }
+  body { background-color: #F7F4EF; }
+  .fade-up { opacity: 0; transform: translateY(14px); transition: opacity .7s ease, transform .7s ease; }
+  .fade-up.in { opacity: 1; transform: translateY(0); }
+  @media (prefers-reduced-motion: reduce) {
+    .fade-up { opacity: 1 !important; transform: none !important; transition: none !important; }
+    html { scroll-behavior: auto; }
+  }
+  .accordion-content { max-height: 0; overflow: hidden; transition: max-height .35s ease; }
+  a:focus-visible, button:focus-visible { outline: 2px solid #6E7A55; outline-offset: 3px; }
+</style>
+</head>
+
+<body class="font-sans text-ink antialiased">
+
+<!-- ===== HEADER ===== -->
+<header class="fixed top-0 inset-x-0 z-50 bg-sand/90 backdrop-blur-sm border-b border-line">
+  <div class="max-w-6xl mx-auto px-6 md:px-10 h-20 flex items-center justify-between">
+    <a href="#topo" class="font-serif text-2xl tracking-wide text-ink">
+      Elane Quezia <span class="italic text-sage">Dias</span>
+    </a>
+
+    <nav class="hidden md:flex items-center gap-9 text-[15px] text-ink/80">
+      <a href="#sobre" class="hover:text-sage transition-colors">Sobre</a>
+      <a href="#atuacao" class="hover:text-sage transition-colors">Como posso ajudar</a>
+      <a href="#consulta" class="hover:text-sage transition-colors">A consulta</a>
+      <a href="#duvidas" class="hover:text-sage transition-colors">Dúvidas</a>
+    </nav>
+
+    <a href="https://wa.me/5531982617697" target="_blank" rel="noopener"
+       class="hidden md:inline-flex items-center px-5 py-2.5 rounded-full bg-olive text-sand text-[14px] font-medium hover:bg-sageDark transition-colors">
+      Agendar consulta
+    </a>
+
+    <button id="menuBtn" aria-label="Abrir menu" aria-expanded="false" class="md:hidden text-ink">
+      <svg id="iconOpen" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></svg>
+      <svg id="iconClose" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" class="hidden"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></svg>
+    </button>
+  </div>
+
+  <div id="mobileMenu" class="hidden md:hidden border-t border-line bg-sand">
+    <div class="px-6 py-6 flex flex-col gap-5 text-[16px]">
+      <a href="#sobre" class="menu-link">Sobre</a>
+      <a href="#atuacao" class="menu-link">Como posso ajudar</a>
+      <a href="#consulta" class="menu-link">A consulta</a>
+      <a href="#duvidas" class="menu-link">Dúvidas</a>
+      <a href="https://wa.me/5531982617697" target="_blank" rel="noopener"
+         class="mt-1 inline-flex justify-center px-5 py-3 rounded-full bg-olive text-sand font-medium">
+        Agendar consulta
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section id="topo" class="relative pt-32 md:pt-40 pb-20 md:pb-0 overflow-hidden">
+  <div class="max-w-6xl mx-auto px-6 md:px-10 grid md:grid-cols-[1.05fr_0.95fr] gap-14 md:gap-8 items-center">
+
+    <div class="fade-up order-2 md:order-1">
+      <p class="text-sage text-[15px] font-medium mb-5">Nutrição · CRN9-38934</p>
+      <h1 class="font-serif text-[2.6rem] leading-[1.08] sm:text-6xl sm:leading-[1.05] text-ink">
+        Comida de verdade,<br> orientação de perto <em class="italic text-sage font-medium">e nenhum terrorismo nutricional.</em>
+      </h1>
+      <p class="mt-7 text-[17px] leading-relaxed text-ink/75 max-w-md">
+        Acompanhamento nutricional individualizado, pensado para caber na sua rotina real — não na de um paciente ideal que não existe. Presencial ou online.
+      </p>
+
+      <div class="mt-9 flex flex-wrap items-center gap-5">
+        <a href="https://wa.me/5531982617697" target="_blank" rel="noopener"
+           class="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-olive text-sand text-[15px] font-medium hover:bg-sageDark transition-colors">
+          Agendar consulta via WhatsApp
+        </a>
+        <a href="#sobre" class="text-[15px] text-ink/70 hover:text-sage transition-colors underline underline-offset-4 decoration-line">
+          Conhecer o trabalho
+        </a>
+      </div>
+    </div>
+
+    <div class="order-1 md:order-2 relative">
+      <div class="absolute -right-4 top-6 w-[86%] h-[92%] bg-sage/25 rounded-[2rem] -z-10 hidden sm:block"></div>
+      <img src="assets/elane-hero.jpg" alt="Elane Quezia Dias, nutricionista, de jaleco branco"
+           class="w-full max-w-sm mx-auto md:mx-0 md:ml-auto rounded-[1.75rem] object-cover aspect-[3/4] shadow-[0_18px_40px_-20px_rgba(58,54,46,0.35)]">
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== SOBRE ===== -->
+<section id="sobre" class="py-24 md:py-32 bg-sandDeep">
+  <div class="max-w-6xl mx-auto px-6 md:px-10 grid md:grid-cols-[0.85fr_1.15fr] gap-14 items-center">
+
+    <div class="fade-up order-2 md:order-1">
+      <img src="assets/elane-apontando.jpg" alt="Elane Quezia Dias apontando para o jaleco com seu nome bordado"
+           class="w-full max-w-xs mx-auto md:mx-0 rounded-[1.5rem] object-cover aspect-[3/4]">
+    </div>
+
+    <div class="fade-up order-1 md:order-2">
+      <p class="text-sage text-[15px] font-medium mb-5">Sobre mim</p>
+      <h2 class="font-serif text-4xl sm:text-[2.75rem] leading-tight text-ink mb-6">
+        Nutrição não é sobre proibir. É sobre entender.
+      </h2>
+      <div class="space-y-5 text-[17px] leading-relaxed text-ink/75 max-w-lg">
+        <p>Sou Elane Quezia Dias, nutricionista (CRN9-38934). Minha formação me deu a técnica — mas foi o consultório que me ensinou que nenhum plano alimentar funciona se ele ignora quem a pessoa realmente é: sua rotina, seu paladar, sua história com a comida.</p>
+        <p>Por isso, meus atendimentos começam sempre pela escuta, não pela restrição. O resultado é um acompanhamento que você consegue manter — sem listas de alimentos proibidos, sem culpa e sem promessas que não se sustentam.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== ÁREAS DE ATUAÇÃO ===== -->
+<section id="atuacao" class="py-24 md:py-32">
+  <div class="max-w-6xl mx-auto px-6 md:px-10">
+    <div class="max-w-xl fade-up mb-16">
+      <p class="text-sage text-[15px] font-medium mb-5">Como posso te ajudar</p>
+      <h2 class="font-serif text-4xl sm:text-[2.75rem] leading-tight text-ink">Cada corpo pede um caminho diferente.</h2>
+    </div>
+
+    <div class="divide-y divide-line border-t border-b border-line">
+
+      <div class="fade-up grid md:grid-cols-[1fr_2fr] gap-4 md:gap-10 py-10">
+        <h3 class="font-serif text-2xl text-ink">Reeducação alimentar</h3>
+        <p class="text-[16px] leading-relaxed text-ink/70 max-w-xl">Construção de hábitos alimentares duradouros, no seu ritmo — sem dietas restritivas que só funcionam enquanto duram.</p>
+      </div>
+
+      <div class="fade-up grid md:grid-cols-[1fr_2fr] gap-4 md:gap-10 py-10">
+        <h3 class="font-serif text-2xl text-ink">Emagrecimento saudável</h3>
+        <p class="text-[16px] leading-relaxed text-ink/70 max-w-xl">Perda de peso conduzida com acompanhamento próximo, ajustes reais e nenhum atalho que comprometa sua saúde a longo prazo.</p>
+      </div>
+
+      <div class="fade-up grid md:grid-cols-[1fr_2fr] gap-4 md:gap-10 py-10">
+        <h3 class="font-serif text-2xl text-ink">Nutrição clínica</h3>
+        <p class="text-[16px] leading-relaxed text-ink/70 max-w-xl">Planos alimentares que dialogam com condições de saúde específicas, sempre em conjunto com o restante da sua equipe médica.</p>
+      </div>
+
+      <div class="fade-up grid md:grid-cols-[1fr_2fr] gap-4 md:gap-10 py-10">
+        <h3 class="font-serif text-2xl text-ink">Saúde e qualidade de vida</h3>
+        <p class="text-[16px] leading-relaxed text-ink/70 max-w-xl">Ajustes na alimentação para mais energia, melhor digestão e disposição no dia a dia — sem virar sua rotina de cabeça para baixo.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== COMO FUNCIONA ===== -->
+<section id="consulta" class="py-24 md:py-32 bg-sandDeep">
+  <div class="max-w-6xl mx-auto px-6 md:px-10 grid md:grid-cols-[0.9fr_1.1fr] gap-16">
+
+    <div class="fade-up">
+      <p class="text-sage text-[15px] font-medium mb-5">Como funciona a consulta</p>
+      <h2 class="font-serif text-4xl sm:text-[2.75rem] leading-tight text-ink mb-6">Três etapas, um acompanhamento contínuo.</h2>
+      <p class="text-[17px] leading-relaxed text-ink/75 max-w-sm">Nada de plano genérico entregue e esquecido. O acompanhamento continua depois da primeira consulta.</p>
+      <img src="assets/elane-avaliacao-serio.jpg" alt="Elane Quezia Dias com adipômetro para avaliação de composição corporal"
+           class="hidden md:block mt-10 rounded-[1.5rem] object-cover aspect-[4/5] max-w-xs">
+    </div>
+
+    <div class="fade-up space-y-0">
+      <div class="flex gap-6 pb-10 border-b border-line">
+        <span class="font-serif text-3xl text-sage w-10 shrink-0">1</span>
+        <div>
+          <h3 class="text-[17px] font-semibold text-ink mb-2">Anamnese detalhada e escuta ativa</h3>
+          <p class="text-[16px] leading-relaxed text-ink/70">Uma conversa real sobre sua rotina, seu histórico de saúde e sua relação com a comida — a base de tudo que vem depois.</p>
+        </div>
+      </div>
+      <div class="flex gap-6 py-10 border-b border-line">
+        <span class="font-serif text-3xl text-sage w-10 shrink-0">2</span>
+        <div>
+          <h3 class="text-[17px] font-semibold text-ink mb-2">Plano alimentar individualizado</h3>
+          <p class="text-[16px] leading-relaxed text-ink/70">Construído para caber no seu estilo de vida — seus horários, suas preferências, o que está ao seu alcance no dia a dia.</p>
+        </div>
+      </div>
+      <div class="flex gap-6 pt-10">
+        <span class="font-serif text-3xl text-sage w-10 shrink-0">3</span>
+        <div>
+          <h3 class="text-[17px] font-semibold text-ink mb-2">Acompanhamento e suporte contínuo</h3>
+          <p class="text-[16px] leading-relaxed text-ink/70">Retornos para ajustar o plano conforme sua evolução, com suporte entre as consultas quando surgirem dúvidas.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== DEPOIMENTOS ===== -->
+<section class="py-24 md:py-32">
+  <div class="max-w-6xl mx-auto px-6 md:px-10">
+    <div class="max-w-xl fade-up mb-16">
+      <p class="text-sage text-[15px] font-medium mb-5">Transformações</p>
+      <h2 class="font-serif text-4xl sm:text-[2.75rem] leading-tight text-ink">O que fica depois do acompanhamento.</h2>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-10 md:gap-8">
+
+      <div class="fade-up">
+        <span class="font-serif text-6xl text-sage/50 leading-none">"</span>
+        <p class="font-serif text-xl italic text-ink/85 leading-snug -mt-3">Pela primeira vez não senti que estava fazendo dieta. Só mudei a forma de comer.</p>
+        <p class="mt-5 text-[14px] text-muted">Paciente em acompanhamento · 8 meses</p>
+      </div>
+
+      <div class="fade-up">
+        <span class="font-serif text-6xl text-sage/50 leading-none">"</span>
+        <p class="font-serif text-xl italic text-ink/85 leading-snug -mt-3">A escuta no início fez toda a diferença. O plano parecia feito sob medida, porque era.</p>
+        <p class="mt-5 text-[14px] text-muted">Paciente em acompanhamento · 1 ano</p>
+      </div>
+
+      <div class="fade-up">
+        <span class="font-serif text-6xl text-sage/50 leading-none">"</span>
+        <p class="font-serif text-xl italic text-ink/85 leading-snug -mt-3">Os retornos me mantiveram no caminho nos meses difíceis. Nunca me senti sozinha no processo.</p>
+        <p class="mt-5 text-[14px] text-muted">Paciente em acompanhamento · 5 meses</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section id="duvidas" class="py-24 md:py-32 bg-sandDeep">
+  <div class="max-w-6xl mx-auto px-6 md:px-10 grid md:grid-cols-[0.8fr_1.2fr] gap-14">
+
+    <div class="fade-up">
+      <p class="text-sage text-[15px] font-medium mb-5">Dúvidas frequentes</p>
+      <h2 class="font-serif text-4xl sm:text-[2.75rem] leading-tight text-ink">Antes de agendar.</h2>
+    </div>
+
+    <div class="fade-up divide-y divide-line border-t border-b border-line" id="faq">
+
+      <div class="faq-item py-6">
+        <button class="faq-btn w-full flex justify-between items-center text-left gap-4">
+          <span class="text-[17px] font-medium text-ink">Você atende por convênio?</span>
+          <span class="faq-icon text-sage text-2xl leading-none shrink-0">+</span>
+        </button>
+        <div class="accordion-content">
+          <p class="pt-4 pb-1 text-[16px] leading-relaxed text-ink/70 max-w-lg">O atendimento é particular. Após a consulta, entrego um recibo que pode ser usado para reembolso, caso seu plano de saúde ofereça essa opção.</p>
+        </div>
+      </div>
+
+      <div class="faq-item py-6">
+        <button class="faq-btn w-full flex justify-between items-center text-left gap-4">
+          <span class="text-[17px] font-medium text-ink">O atendimento online funciona tão bem quanto o presencial?</span>
+          <span class="faq-icon text-sage text-2xl leading-none shrink-0">+</span>
+        </button>
+        <div class="accordion-content">
+          <p class="pt-4 pb-1 text-[16px] leading-relaxed text-ink/70 max-w-lg">Sim. A anamnese, o plano alimentar e os retornos seguem a mesma estrutura — só muda o formato da conversa, por videochamada.</p>
+        </div>
+      </div>
+
+      <div class="faq-item py-6">
+        <button class="faq-btn w-full flex justify-between items-center text-left gap-4">
+          <span class="text-[17px] font-medium text-ink">Como funcionam os retornos?</span>
+          <span class="faq-icon text-sage text-2xl leading-none shrink-0">+</span>
+        </button>
+        <div class="accordion-content">
+          <p class="pt-4 pb-1 text-[16px] leading-relaxed text-ink/70 max-w-lg">A frequência é combinada de acordo com o seu objetivo, geralmente a cada 3 ou 4 semanas, para ajustar o plano conforme sua evolução.</p>
+        </div>
+      </div>
+
+      <div class="faq-item py-6">
+        <button class="faq-btn w-full flex justify-between items-center text-left gap-4">
+          <span class="text-[17px] font-medium text-ink">Preciso levar exames na primeira consulta?</span>
+          <span class="faq-icon text-sage text-2xl leading-none shrink-0">+</span>
+        </button>
+        <div class="accordion-content">
+          <p class="pt-4 pb-1 text-[16px] leading-relaxed text-ink/70 max-w-lg">Se você já tiver exames recentes, é útil trazê-los. Caso não tenha, não é um impedimento — podemos seguir com a avaliação inicial normalmente.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== RODAPÉ / CONTATO ===== -->
+<footer class="bg-olive text-sand pt-24 pb-10">
+  <div class="max-w-6xl mx-auto px-6 md:px-10">
+
+    <div class="grid md:grid-cols-[1.2fr_1fr] gap-14 items-center pb-16 border-b border-sand/15">
+      <div class="fade-up">
+        <h2 class="font-serif text-4xl sm:text-5xl leading-tight">Vamos conversar sobre o seu próximo passo?</h2>
+        <p class="mt-5 text-sand/70 text-[17px] leading-relaxed max-w-md">Sem terrorismo nutricional, sem julgamento. Só um plano que faz sentido para a sua vida.</p>
+      </div>
+      <div class="fade-up md:justify-self-end">
+        <a href="https://wa.me/5531982617697" target="_blank" rel="noopener"
+           class="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-sand text-olive text-[15px] font-semibold hover:bg-sand/90 transition-colors">
+          Agendar pelo WhatsApp
+        </a>
+      </div>
+    </div>
+
+    <div class="pt-10 flex flex-col md:flex-row justify-between gap-8 text-[14px] text-sand/60">
+      <div>
+        <p class="font-serif text-xl text-sand mb-1">Elane Quezia Dias</p>
+        <p>Nutricionista · CRN9-38934</p>
+      </div>
+      <div class="flex gap-6">
+        <a href="https://wa.me/5531982617697" target="_blank" rel="noopener" class="hover:text-sand transition-colors">WhatsApp</a>
+        <a href="#" target="_blank" rel="noopener" class="hover:text-sand transition-colors">Instagram</a>
+      </div>
+      <p>© <span id="year"></span> Elane Quezia Dias Nutrição.</p>
+    </div>
+
+  </div>
+</footer>
+
+<script>
+  // Mobile menu
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const iconOpen = document.getElementById('iconOpen');
+  const iconClose = document.getElementById('iconClose');
+
+  menuBtn.addEventListener('click', () => {
+    const isHidden = mobileMenu.classList.contains('hidden');
+    mobileMenu.classList.toggle('hidden');
+    iconOpen.classList.toggle('hidden');
+    iconClose.classList.toggle('hidden');
+    menuBtn.setAttribute('aria-expanded', String(isHidden));
+  });
+
+  document.querySelectorAll('.menu-link').forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
+      iconOpen.classList.remove('hidden');
+      iconClose.classList.add('hidden');
+      menuBtn.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  // FAQ accordion
+  document.querySelectorAll('.faq-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const content = btn.nextElementSibling;
+      const icon = btn.querySelector('.faq-icon');
+      const isOpen = content.style.maxHeight && content.style.maxHeight !== '0px';
+
+      document.querySelectorAll('.accordion-content').forEach(c => c.style.maxHeight = '0px');
+      document.querySelectorAll('.faq-icon').forEach(i => i.textContent = '+');
+
+      if (!isOpen) {
+        content.style.maxHeight = content.scrollHeight + 'px';
+        icon.textContent = '−';
+      }
+    });
+  });
+
+  // Fade-up on scroll
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
